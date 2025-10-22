@@ -1,0 +1,27 @@
+sign_up_button = '//*[@id="signin2"]'
+sign_up_username_field = '//*[@id="sign-username"]'
+sign_up_password_field = '//*[@id="sign-password"]'
+sign_up_form_button = '//*[@id="signInModal"]/div/div/div[3]/button[2]'
+
+log_in_button = '//*[@id="login2"]'
+log_in_username_field = '//*[@id="loginusername"]'
+log_in_password_field = '//*[@id="loginpassword"]'
+log_in_form_button = '//*[@id="logInModal"]/div/div/div[3]/button[2]'
+
+log_out_button = '//*[@id="logout2"]'
+
+open_product_page_button = '//*[@id="tbodyid"]/div/div/a'
+add_to_cart_button = '//*[@class="btn btn-success btn-lg"]'
+cart_button = '//*[@id="cartur"]'
+place_order_button = '//button[contains(text(), "Place Order")]'
+delete_from_cart_button = '//a[contains(text(), "Delete")]'
+should_not_contain_element = '//*[@id="tbodyid" and not(*)]'
+
+form_name_field = '//*[@id="name"]'
+form_country_field = '//*[@id="country"]'
+form_city_field = '//*[@id="city"]'
+form_credit_cart_field = '//*[@id="card"]'
+form_month_field = '//*[@id="month"]'
+form_year_field = '//*[@id="year"]'
+purchase_order_button = '//button[contains(text(), "Purchase")]'
+success_ok_button = '//*[@class="sa-confirm-button-container"]/button'
