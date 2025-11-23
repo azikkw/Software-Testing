@@ -4,10 +4,10 @@ Suite Setup    Open Tests Browser
 Suite Teardown    Close Test Browsers
 
 *** Test Cases ***
-USER_AUTHENTICATION_TEST
+USER_SIGNUP_TEST
     Sign Up
 
-USER_AUTHENTICATION_TEST
+USER_LOGIN_LOGOUT_TEST
     Log In
     Log Out
 
