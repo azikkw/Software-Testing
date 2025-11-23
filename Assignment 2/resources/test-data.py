@@ -9,3 +9,9 @@ form_city_field_value = 'Almaty'
 form_credit_cart_field_value='421521621621621'
 form_month_field_value='October'
 form_year_field_value='2025'
+
+browserstack_username = "altairkabdrakhma_KgnCDQ"
+browserstack_accesskey = "8urbCcNBt7qTMFDJqzkf"
+
+browserstack_url = f"http://{browserstack_username}:{browserstack_accesskey}@hub.browserstack.com/wd/hub"
+browser = 'chrome'

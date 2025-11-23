@@ -5,9 +5,11 @@ Variables   ./locators.py
 Variables   ./test-data.py
 
 *** Keywords ***
+Open Tests Browser
+    Open Browser    ${baseUrl}  remote_url=${browserstack_url}
+    Maximize Browser Window
+
 Sign Up
-    Open Browser    ${base_url}      Chrome
-    
     Wait Until Page Contains Element    ${sign_up_button}    timeout=20    error=sign_up_button not found
     Click Element   ${sign_up_button}
     
@@ -21,8 +23,6 @@ Sign Up
     Sleep    2s
 
 Log In
-    Open Browser    ${base_url}    Chrome
-    
     Wait Until Page Contains Element    ${log_in_button}    timeout=20    error=log_in_button not found
     Sleep    1s
     Click Element    ${log_in_button}
@@ -44,8 +44,6 @@ Log Out
     Sleep    2s
 
 Add To Cart
-    Open Browser    ${base_url}    Chrome
-    
     Wait Until Page Contains element    ${open_product_page_button}    timeout=20    error=open_product_page_button not found
     Click Element    ${open_product_page_button}
     Sleep    1s
@@ -66,8 +64,6 @@ Remove From Cart
     Sleep    2s
 
 Buy Product
-    Open Browser    ${base_url}    Chrome
-    
     Wait Until Page Contains element    ${open_product_page_button}    timeout=20    error=open_product_page_button not found
     Click Element    ${open_product_page_button}
     Sleep    1s
