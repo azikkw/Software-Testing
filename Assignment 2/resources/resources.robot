@@ -10,13 +10,17 @@ Open Tests Browser
     Maximize Browser Window
 
 Sign Up
+    ${timestamp}=    Evaluate    int(__import__('time').time() * 1000)
+    ${login}=        Set Variable    ${user_login_value}_${timestamp}
+    Set Suite Variable    ${login}
+
     Wait Until Page Contains Element    ${sign_up_button}    timeout=20    error=sign_up_button not found
     Click Element   ${sign_up_button}
     
     Wait Until Page Contains Element    ${sign_up_username_field}    timeout=20    error=sign_up_username_field not found
     Sleep    1s
     
-    Input Text    ${sign_up_username_field}    ${user_login_value}
+    Input Text    ${sign_up_username_field}    ${login}
     Input Password    ${sign_up_password_field}    ${user_password_value}
     
     Click Element    ${sign_up_form_button}
