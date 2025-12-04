@@ -34,7 +34,7 @@ Log In
     Wait Until Page Contains Element    ${log_in_username_field}    timeout=20    error=log_in_username_field not found
     Sleep    1s
 
-    Input Text    ${log_in_username_field}    ${login}
+    Input Text    ${log_in_username_field}    ${user_login_value}
     Input Password    ${log_in_password_field}    ${user_password_value}
 
     Click Element    ${log_in_form_button}
